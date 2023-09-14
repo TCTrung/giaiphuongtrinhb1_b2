@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giai ptb2</title>
+</head>
+<body>
+<script>
+    let a = prompt('Nhap a');
+    let b = prompt('Nhap b');
+    let c = prompt('Nhap c');
+
+    let d = (b*b) - (4*a*c);
+    if (a ==0) {
+        if (b == 0) {
+            if (c == 0) {
+                alert('Phuong trinh vo so nghiem')
+            }else {
+                alert('Phuong trinh vo nghiem')
+            }
+
+        } else {
+            let x = -c/b;
+            alert('Nghiem x =' + x);
+        }
+    }else if (d < 0) {
+            alert('Phuong trinh vo nghiem');
+        } else if (d == 0) {
+            let x = -b / (2 * a);
+            alert('Nghiem x1 = x2 =' + x);
+        } else {
+            let x1 = (-b + Math.sqrt(d)) / (2 * a);
+            let x2 = (-b - Math.sqrt(d)) / (2 * a);
+            alert('Nghiem x1 = ' + x1 + ' x2 = ' + x2);
+        }
+
+
+
+</script>
+</body>
+</html>
